@@ -31,6 +31,12 @@ def show_images(imgs, num_rows, num_cols, titles=None, scale=1.5):  #@save
 
 
 
+def get_dataloader_workers():  #@save
+    #use 4 
+    return 4
+
+
+
 def load_data_fashion_mnist(batch_size, resize=None):  #@save
     trans = [transforms.ToTensor()]
     if resize:
